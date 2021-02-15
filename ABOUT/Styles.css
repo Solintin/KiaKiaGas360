@@ -29,7 +29,7 @@ body {
 .landing-page {
   min-width: 100%;
   min-height: auto;
-  background-image: url("/Asset/images/Rectangle.png");
+  background-image: url("/ABOUT/Asset/images/Rectangle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

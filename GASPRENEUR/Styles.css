@@ -28,9 +28,9 @@ body {
 /* =============Deskstop view====================== */
 .landing-page {
   min-width: 100%;
-  min-height: 100vh;
-  /* background: #f6f6eb; */
-  background-image: url("/Asset/images/Rectangle.png");
+  min-height: auto;
+
+  background-image: url("/GASPRENEUR/Asset/images/Rectangle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,6 +59,11 @@ body {
 
 .tabs a {
   color: #000;
+}
+/* ===========CONTENT ================= */
+.head {
+  text-transform: uppercase;
+  color: var(--primary);
 }
 
 /* ==============upgrade=========================== */
@@ -127,6 +132,38 @@ body {
 }
 .show-text .plus-icon {
   display: none;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"] {
+  width: 100%;
+  border: none;
+  padding: 10px 10px 10px 35px;
+  border-bottom: 1px solid #555555;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+input[type="text"]:focus,
+input[type="phone"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-bottom: 1.5px solid var(--primary);
+  transition: all 0.5s ease-in-out;
+}
+
+.label-head {
+  font-size: 25px;
+}
+.icon {
+  top: 13px;
+  left: 0;
+}
+p label {
+  color: #474a57;
 }
 /* ==================footer===================== */
 .footer {
@@ -198,8 +235,19 @@ body {
   .menu-list li:last-child {
     display: none !important;
   }
-
-  
+  h5.head {
+    font-size: 16px;
+  }
+  .gas360-circle {
+    padding: 50px 0;
+  }
+  .label-head {
+    font-size: 20px;
+  }
+  form button {
+    width: 100%;
+    background-color: var(--primary);
+  }
   /* ======================= Footer====================== */
   .footer .footer-card {
     width: 30%;
@@ -221,8 +269,4 @@ body {
   .footer-mobile a:hover {
     color: var(--primary) !important;
   }
-
-
-
 }
-
