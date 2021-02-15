@@ -29,8 +29,7 @@ body {
 .landing-page {
   min-width: 100%;
   min-height: auto;
-
-  background-image: url("/GASPRENEUR/Asset/images/Rectangle.png");
+  background-image: url("/FAQS/Asset/images/Rectangle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,11 +58,6 @@ body {
 
 .tabs a {
   color: #000;
-}
-/* ===========CONTENT ================= */
-.head {
-  text-transform: uppercase;
-  color: var(--primary);
 }
 
 /* ==============upgrade=========================== */
@@ -94,6 +88,7 @@ body {
   text-transform: capitalize;
   padding-bottom: 5px;
   font-weight: 500;
+  font-size: 18px;
 }
 .question:last-child {
   border-bottom: none;
@@ -133,38 +128,6 @@ body {
 .show-text .plus-icon {
   display: none;
 }
-
-input[type="text"],
-input[type="phone"],
-input[type="email"] {
-  width: 100%;
-  border: none;
-  padding: 10px 10px 10px 35px;
-  border-bottom: 1px solid #555555;
-}
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 15px;
-}
-
-input[type="text"]:focus,
-input[type="phone"]:focus,
-input[type="email"]:focus {
-  outline: none;
-  border-bottom: 1.5px solid var(--primary);
-  transition: all 0.5s ease-in-out;
-}
-
-.label-head {
-  font-size: 25px;
-}
-.icon {
-  top: 13px;
-  left: 0;
-}
-p label {
-  color: #474a57;
-}
 /* ==================footer===================== */
 .footer {
   display: flex;
@@ -189,6 +152,50 @@ p label {
 }
 .footer-mobile {
   display: none;
+}
+.head {
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.btn-container {
+  display: block;
+}
+.tab-btn {
+  margin-bottom: 2rem;
+  padding-left: 7px;
+  font-size: 1rem;
+  background: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+}
+.tab-btn:hover:not(.active) {
+  background: white;
+  color: #000;
+}
+
+/* hide content */
+.content {
+  display: none;
+}
+.tab-btn.active {
+  background: #e9f2fc;
+  border-right: 2px solid var(--primary);
+  padding: 7px;
+}
+.content.active {
+  display: block;
+}
+.col-2 {
+  border-right: 0.5px solid #d9dbe1;
+}
+.col-2 {
+  padding: 0 !important;
+}
+#privacy,
+#contact {
+  margin-bottom: 70px;
 }
 
 @media screen and (max-width: 992px) {
@@ -235,26 +242,41 @@ p label {
   .menu-list li:last-child {
     display: none !important;
   }
-  .menu-list a {
+  .cta img {
+    width: 350px;
+  }
+  .menu-list li a {
     font-size: 25px;
   }
   li a:hover {
     color: var(--primary) !important;
   }
-
   h5.head {
     font-size: 16px;
   }
   .gas360-circle {
     padding: 50px 0;
   }
-  .label-head {
-    font-size: 20px;
+
+  .tab-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 0.5px solid #d9dbe1;
   }
-  form button {
-    width: 100%;
-    background-color: var(--primary);
-    margin-bottom: 50px;
+  .tab-btn.active {
+    background: #fff;
+    border-bottom: 3px solid var(--primary);
+    padding: 4px;
+    border-right: none !important;
+    font-weight: 600;
+  }
+  .tab-btn {
+    margin-bottom: 14px
+  }
+  .col-2{
+    display: none;
   }
   /* ======================= Footer====================== */
   .footer .footer-card {
@@ -276,5 +298,10 @@ p label {
   }
   .footer-mobile a:hover {
     color: var(--primary) !important;
+  }
+}
+@media screen and (min-width: 765px) {
+  .tab-mobile{
+    display: none;
   }
 }

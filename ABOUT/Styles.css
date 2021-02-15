@@ -214,9 +214,13 @@ body {
     display: block !important;
     margin: 50px 20px !important;
   }
-  .menu-list a{
+  .menu-list a {
     font-size: 25px;
   }
+  li a:hover {
+    color: var(--primary) !important;
+  }
+
   .menu-list li:last-child {
     display: none !important;
   }
