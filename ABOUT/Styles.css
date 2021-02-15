@@ -214,6 +214,9 @@ body {
     display: block !important;
     margin: 50px 20px !important;
   }
+  .menu-list a{
+    font-size: 25px;
+  }
   .menu-list li:last-child {
     display: none !important;
   }

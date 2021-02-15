@@ -235,6 +235,9 @@ p label {
   .menu-list li:last-child {
     display: none !important;
   }
+  .menu-list a{
+    font-size: 25px;
+  }
   h5.head {
     font-size: 16px;
   }
