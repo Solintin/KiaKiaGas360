@@ -372,6 +372,12 @@ body {
   .partners-mobile {
     display: flex;
   }
+  .phone-mobile img{
+    width: 450px;
+  }
+  .phone-desktop{
+    display: none;
+  }
 
   /* Owl design */
 
@@ -402,6 +408,7 @@ body {
   .mobileC,
   .mobileE,
   .mobileG,
+  .phone-mobile,
   .partners-mobile {
     display: none;
   }

@@ -13,11 +13,11 @@ menuBar.addEventListener("click", ()=>{
 const questions = document.querySelectorAll(".question");
 
 questions.forEach(function (question) {
-  const btn = question.querySelector(".question-btn");
-  // console.log(btn);
+  const btn = question.querySelector(".question-title");
+ 
 
   btn.addEventListener("click", function () {
-    // console.log(question);
+    
 
     questions.forEach(function (item) {
       if (item !== question) {
